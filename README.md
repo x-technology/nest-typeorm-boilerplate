@@ -2,47 +2,63 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 # nest-typeorm-boilerplate
+
+You are looking at boilerplate which you can use to start developing your REST API much faster. Under the hood it uses [Nest](https://github.com/nestjs/nest) which is famous by its agnosticism principles. This is a great advantage of this framework, since you can use any technologies with it. But if the list of technologies listed bellow matches your needs (or you simply not sure), it could be a great idea to check your ideas using this boilerplate. It can save you a lot of time for initial configuration and research.   
+
+## It was built online (and it's in progress)
+
+This repository was built completely online, you can watch the videos here:
+
+- Part I: https://www.youtube.com/watch?v=JhkwPVQ65p8 (Idea, installing Nest, setting up DB)
+- _Part II: https://www.youtube.com/watch?v=qH-AlGOOY-o - Gonna happen at July, 16th, 10:00 CET_
+
 
 It's a boilerplate for Nest.js with pre-configured typeorm module, migrations and seeders
 
 ## Features
 
-- REST API by Nest
-- Postgres as DBMS
-- TypeORM as ORM
-- Automatically generated CRUD endpoints
-- Migrations
-- Seeders
-- Integration tests for API endpoints
+### Core is Nest
+
+First it has [Nest](https://github.com/nestjs/nest) under the hood which gives you a lot of possibilities to extend, modify, replace technologies and so on. It's super flexible.
+
+Nest itself gives you a great way to build REST API. Following technologies solve the common problems which you face after starting developing of your app.
+
+### Postgres as DBMS
+
+In this repo you will find docker-compose file which allows you to run postgres as database. 
+
+### TypeORM and generated CRUD endpoints
+
+... TBD
+
+### Migrations
+
+... TBD
+
+### Seeders
+
+... TBD
+
+### Integration tests for API endpoints
+
+... TBD
 
 ## Examples
 
-....
+In this project you will find some modules which are here for example purposes. They demonstrate example how you can start REST API for an online shop. 
 
-## Description
+... TBC
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Entities:
+- products
+  - price
+- users
+  - admins
+  - buyers
+- order
+  - statuses
+  - buyer
 
 ## Installation
 
@@ -53,6 +69,9 @@ $ npm install
 ## Running the app
 
 ```bash
+# start database
+$ docker-compose db
+
 # development
 $ npm run start
 
@@ -79,12 +98,6 @@ $ npm run test:cov
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 

@@ -1,0 +1,15 @@
+version: 'v3'
+services:
+  db:
+    image: plyo/postgres:database-13.1-6.0.2
+    ports:
+      - '5444:5432'
+    environment:
+      POSTGRES_PASSWORD: password
+      ADMIN_ROLE_NAME: admin
+      ADMIN_PASSWORD: password
+      APP_ROLE_NAME: app
+      APP_PASSWORD: password
+      DB_NAME: boilerplate
+      SCHEMA_NAME: boilerplate
+      EXTENSIONS: pgcrypto,"uuid-ossp"
