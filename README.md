@@ -51,7 +51,10 @@ In this project you will find some modules which are here for example purposes. 
 ... TBC
 
 Entities:
+
 - products
+  - name
+  - description
   - price
 - users
   - admins
