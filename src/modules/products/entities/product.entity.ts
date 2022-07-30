@@ -1,12 +1,17 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { IsNotEmpty } from 'class-validator';
 
 @Entity('products')
 export class Product {
   @PrimaryGeneratedColumn() id: number;
 
-  @Column() name: string;
+  @IsNotEmpty()
+  @Column()
+  name: string;
 
-  @Column() description: string;
+  @IsNotEmpty()
+  @Column()
+  description?: string | null;
 
   @Column('float') price: number;
 }
