@@ -9,13 +9,13 @@ export const ormConfig: TypeOrmModuleOptions = {
   password: process.env.DB_PASS || 'password',
   database: process.env.DB_NAME || 'boilerplate',
   schema: process.env.DB_SCHEMA || 'boilerplate',
-  synchronize: true,
+  synchronize: false,
   logging: 'all',
   entities: [resolve(__dirname, 'modules/**/entities/*.entity.{ts,js}')],
   // migrations: [resolve(__dirname, '../migrations/*.{ts,js}')],
 };
 
-// export const seedOrmConfig: TypeOrmModuleOptions = {
-//   ...ormConfig,
-//   logging: ['error', 'warn']
-// };
+export const seedOrmConfig: TypeOrmModuleOptions = {
+  ...ormConfig,
+  logging: ['error', 'warn']
+};
